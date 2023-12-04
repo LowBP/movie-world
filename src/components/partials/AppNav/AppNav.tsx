@@ -72,8 +72,7 @@ const AppNav: FunctionComponent = () => {
               type='button'
               className={b('Link', { active: item.link === pathname })}
               title={item.name}
-              onClick={item.action}
-            >
+              onClick={item.action}>
               {item.name}
               <AppIcon icon={item.icon} width={24} height={24} className={b('Icon')} />
             </button>

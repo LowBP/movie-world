@@ -44,8 +44,7 @@ export const AppCardInfinityList: FunctionComponent<IMovieList> = ({
           hasMore={hasMoreElements}
           initialLoad={false}
           loadMore={loadMoreCards}
-          className={b('List', { '6items': Boolean(movies) })}
-        >
+          className={b('List', { '6items': Boolean(movies) })}>
           {movies &&
             movies.map((movie) => {
               return (

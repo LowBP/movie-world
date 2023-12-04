@@ -15,8 +15,7 @@ export const AppSpin: FunctionComponent<IProps> = ({ minHeight }) => {
       className={b()}
       style={{
         minHeight: `${minHeight}px`,
-      }}
-    >
+      }}>
       <svg xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewBox='0 0 44 44' stroke='#2196f3'>
         <g fill='none' fillRule='evenodd' strokeWidth='2'>
           <circle cx='22' cy='22' r='1'>

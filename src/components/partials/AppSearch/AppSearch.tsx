@@ -50,8 +50,7 @@ const AppSearch: FunctionComponent = () => {
           type='button'
           className={b('Clear', { visible: Boolean(searchQuery) })}
           onClick={handleClear}
-          aria-label='Clear search query'
-        >
+          aria-label='Clear search query'>
           <AppIcon icon='icon-cross' width={24} height={24} />
         </button>
       </form>
