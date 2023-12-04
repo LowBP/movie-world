@@ -71,7 +71,8 @@ const AppCard: FunctionComponent<IProps> = ({ title, poster_path, id, vote_avera
         onClick={toggleFavoriteState}
         aria-label={isInFavoriteList() ? 'Remove movie from favorite list' : 'Add movie to favorite list'}
         type='button'
-        className={b('Like')}>
+        className={b('Like')}
+      >
         {isInFavoriteList() ? (
           <AppIcon className='Icon_heart' icon='icon-heart-filled' width={24} height={24} />
         ) : (

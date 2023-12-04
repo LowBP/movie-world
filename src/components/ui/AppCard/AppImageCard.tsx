@@ -23,7 +23,8 @@ const AppImageCard: FunctionComponent<IProps> = ({ file_path, onClick }) => {
         onClick={() => {
           onClick(file_path);
         }}
-        className={b('LightboxBtn')}>
+        className={b('LightboxBtn')}
+      >
         <AppIcon icon={'icon-zoom'} width={48} height={48} />
       </button>
       <figure className={b('Figure')}>

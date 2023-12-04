@@ -34,7 +34,8 @@ const AppTransitionWrapper: FunctionComponent<IProps> = ({ children }) => {
         key={location.key}
         timeout={{ enter: 400, exit: 400 }}
         classNames={'fade'}
-        onEnter={onEnterHandler}>
+        onEnter={onEnterHandler}
+      >
         {children}
       </CSSTransition>
     </TransitionGroup>

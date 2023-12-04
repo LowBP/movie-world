@@ -28,7 +28,8 @@ const AppLink: FunctionComponent<IProps> = ({ ariaLabel, className, to, children
         aria-label={ariaLabel}
         target='_blank'
         rel='noopener noreferrer nofollow'
-        className={classnames(b({ color }), className)}>
+        className={classnames(b({ color }), className)}
+      >
         {children}
       </a>
     );

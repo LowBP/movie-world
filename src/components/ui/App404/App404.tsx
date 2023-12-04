@@ -11,6 +11,7 @@ const App404: FunctionComponent = () => {
 
   useEffect(() => {
     const el = canvasNoise.current;
+
     const noise = new Grain(el);
 
     return () => {

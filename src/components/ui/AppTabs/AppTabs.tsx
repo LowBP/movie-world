@@ -31,7 +31,8 @@ export const AppTabs: FunctionComponent<IProps> = ({ className, tabs, onTabClick
                 <button
                   type='button'
                   className={classnames(b('TabBtn', { isActive }))}
-                  onClick={() => onTabClick(tab.id)}>
+                  onClick={() => onTabClick(tab.id)}
+                >
                   {tab.title}
                 </button>
               </li>
