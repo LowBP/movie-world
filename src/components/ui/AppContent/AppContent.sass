@@ -1,0 +1,20 @@
++b('PageContent')
+  display: flex
+  flex-direction: column
+  flex-grow: 1
+
+  +media($screen-lg)
+    padding-left: 100px
+
+  +m('withPaddings')
+    padding-top: 80px
+    padding-left: 15px
+    padding-right: 15px
+
+    +media($screen-md)
+      padding-top: 100px
+      padding-left: 40px
+      padding-right: 40px
+
+    +media($screen-lg)
+      padding: 120px 50px 100px 150px

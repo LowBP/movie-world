@@ -1,0 +1,98 @@
+html
+  display: flex
+  +scrollbar(12px, $color-blue, transparent)
+
+body
+  min-height: 100vh
+  width: 100%
+  display: flex
+  flex-direction: column
+  margin: 0
+  font-size: $font-size-body
+  line-height: $line-height-body
+  font-family: $font-family-main
+  color: $color-text
+  font-weight: 400
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-text-size-adjust: none
+  background-color: $color-black
+
+img
+  max-width: 100%
+  height: auto
+
+iframe, svg, img
+  vertical-align: top
+
+ul
+  padding: 0
+  margin: 0
+  list-style: none
+
+li
+  list-style-type: none
+  margin: 0
+  padding: 0
+
+a
+  color: inherit
+  text-decoration: none
+  -webkit-tap-highlight-color: transparent
+  touch-action: manipulation
+
+p
+  margin: 0
+
+button
+  padding: 0
+  border: none
+  background-color: transparent
+  cursor: pointer
+  user-select: none
+  -webkit-tap-highlight-color: transparent
+  touch-action: manipulation
+
+figure
+  margin: 0
+
+input,
+input[type=search]
+  touch-action: manipulation
+  -webkit-appearance: none
+  border-radius: 0
+  box-shadow: none
+
+  &:required
+    box-shadow: none
+
+  &::-ms-clear
+    display: none
+
+picture
+  display: inline-block
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration
+  display: none
+
+::-moz-selection
+  background-color: $color-lightgrey
+  color: $color-white
+  text-shadow: none
+
+::selection
+  background-color: $color-lightgrey
+  color: $color-white
+  text-shadow: none
+
+.Root,
+.App,
+.Layout,
+.Wrapper
+  width: inherit
+  display: inherit
+  flex-direction: inherit
+  min-height: inherit

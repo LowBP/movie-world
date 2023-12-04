@@ -1,0 +1,129 @@
++b('CardList')
+  display: flex
+  flex-direction: column
+  overflow: hidden
+
+  +e('Title')
+    font-size: 18px
+    line-height: 28px
+    font-weight: 400
+    margin: 0
+
+    +media($screen-lg)
+      font-size: 24px
+      line-height: 38px
+
+  +e('Counter')
+    display: inline-block
+    font-weight: 400
+    font-size: 12px
+    line-height: 1.6
+    color: $color-grey
+    letter-spacing: 0.4px
+    margin-bottom: 10px
+
+    +media($screen-lg)
+      font-size: 14px
+      margin-bottom: 30px
+
+  +e('List')
+    display: flex
+    flex-wrap: wrap
+
+    .Card-Img
+      width: 100%
+
+    +m('3items')
+      .Card-Figure
+        padding-top: 56.25%
+
+      +media($screen-sm)
+        justify-content: space-between
+
+        @supports (display: grid)
+          width: 100%
+          display: grid
+          grid-template-columns: repeat(2, 1fr)
+          grid-gap: 20px
+
+      +media($screen-lg)
+        grid-template-columns: repeat(3, 1fr)
+        grid-gap: 30px
+
+      .CardList-Item
+        width: 100%
+        margin-bottom: 20px
+
+        +media($screen-sm)
+          width: 48.5%
+
+          @supports (display: grid)
+            width: 100%
+            margin-bottom: 0
+
+        +media($screen-lg)
+          width: 32%
+          margin-bottom: 30px
+
+          @supports (display: grid)
+            width: 100%
+            margin-bottom: 0
+
+    +m('6items')
+      justify-content: space-between
+
+      @supports (display: grid)
+        width: 100%
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(45%, 1fr))
+        grid-gap: 20px
+
+      +media($screen-sm)
+        @supports (display: grid)
+          grid-template-columns: repeat(auto-fill, minmax(30%, 1fr))
+
+      +media($screen-lg)
+        @supports (display: grid)
+          grid-template-columns: repeat(auto-fill, minmax(23%, 1fr))
+
+      +media($screen-xl)
+        @supports (display: grid)
+          grid-template-columns: repeat(auto-fill, minmax(18%, 1fr))
+
+      +media($screen-xxl)
+        @supports (display: grid)
+          grid-template-columns: repeat(auto-fill, minmax(15%, 1fr))
+
+      .CardList-Item
+        width: 45%
+        margin-bottom: 20px
+
+        @supports (display: grid)
+          width: 100%
+          margin-bottom: 0
+
+        +media($screen-sm)
+          width: 30%
+
+          @supports (display: grid)
+            width: 100%
+
+        +media($screen-lg)
+          width: 23%
+
+          @supports (display: grid)
+            width: 100%
+
+        +media($screen-xl)
+          width: 18%
+
+          @supports (display: grid)
+            width: 100%
+
+        +media($screen-xxl)
+          width: 15%
+
+          @supports (display: grid)
+            width: 100%
+
+

@@ -1,0 +1,167 @@
++b('Intro')
+  display: flex
+  flex-direction: column-reverse
+  background-color: $color-blacker
+
+  +media($screen-lg)
+    position: relative
+    height: 728px
+    flex-direction: column
+    justify-content: center
+
+  +e('Title')
+    font-weight: 400
+    font-size: 28px
+    margin: 0 0 14px
+    +line-clamp(2)
+
+    +media($screen-lg)
+      margin-bottom: 18px
+
+    +media($screen-xl)
+      font-size: 2.4vw
+
+  +e('Figure')
+    position: relative
+
+    &::before
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      content: ''
+      background-image: linear-gradient(0deg, $color-blacker 0, rgba($color-blacker, 0.1) 50%, rgba($color-blacker, 0.1))
+      z-index: 2
+
+    +media($screen-lg)
+      width: 70%
+      height: 100%
+      position: absolute
+      right: 0
+      top: 0
+
+      &::before
+        background-image: linear-gradient(90deg, $color-blacker 0, transparent 50%, transparent)
+
+      +m('default')
+        width: 60%
+
+  +e('Pic')
+    height: 100%
+
+  +e('Img')
+    width: 100%
+    height: 30vh
+    object-fit: cover
+    object-position: top
+
+    +m('default')
+      object-fit: contain
+      object-position: center
+
+    +media($screen-md)
+      height: 40vh
+
+    +media($screen-lg)
+      height: 100%
+
+  +e('Inner')
+    padding: 0 15px 15px 15px
+
+    +media($screen-md)
+      padding: 0 40px 40px 40px
+
+    +media($screen-lg)
+      position: relative
+      z-index: 3
+      box-sizing: border-box
+      width: 43%
+      padding: 50px
+
+  +e('Rating')
+    margin-bottom: 14px
+
+    +media($screen-lg)
+      margin-right: 14px
+      margin-bottom: 0
+
+  +e('MetaInfo')
+    display: flex
+    flex-wrap: wrap
+
+  +e('Meta')
+    font-size: 14px
+    color: $color-lightgrey
+    display: inline-block
+
+    &:not(:last-child)
+      margin-right: 8px
+
+    +media($screen-lg)
+      font-size: 16px
+
+  +e('Desc')
+    display: none
+
+    +media($screen-md)
+      display: block
+      font-size: 15px
+      +line-clamp(3)
+
+    +media($screen-lg)
+      margin-bottom: 28px
+
+    +media($screen-xl)
+      font-size: 0.9vw
+
+  +e('Info')
+    +media($screen-md)
+      margin-bottom: 24px
+
+    +media($screen-lg)
+      display: flex
+
+  +e('Btn')
+    display: none
+
+    +media($screen-lg)
+      display: inline-flex
+
+  +e('Breadcrumb')
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 3
+    font-size: 0
+    width: 60px
+    height: 60px
+    background-color: $color-black
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $color-white
+
+    &:hover
+      color: $color-blue
+
+    &::before
+      display: none
+
+    .Icon
+      transform: rotate(180deg)
+
+    +media($screen-lg)
+      width: auto
+      height: auto
+      font-size: 14px
+      left: 50px
+      top: 50px
+      background-color: transparent
+      color: $color-blue
+
+      .Icon
+        display: none
+
+      &::before
+        display: block
