@@ -46,7 +46,7 @@
     "eject": "react-scripts eject",
     "ec:write": "editorconfig-checker",
     "lint:write": "eslint src/. --fix",
-    "lint:check": "eslint src/. ",
+    "lint:check": "eslint src",
     "prettier:write": "prettier --write \"src/**/*.+(jsx|tsx|js|json|md)\"",
     "analyze": "react-app-rewired build --analyze",
     "prepare": "husky install",
