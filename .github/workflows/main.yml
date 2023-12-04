@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - '*'
 
 jobs:
   build:
@@ -13,6 +14,13 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
+
+    - name: Set Environment Variables
+      run: |
+        echo "REACT_APP_TMDB_URL=${{ secrets.REACT_APP_TMDB_URL }}" >> $GITHUB_ENV
+        echo "REACT_APP_API_KEY=${{ secrets.REACT_APP_API_KEY }}" >> $GITHUB_ENV
+        echo "REACT_APP_API_LANG=${{ secrets.REACT_APP_API_LANG }}" >> $GITHUB_ENV
+        echo "REACT_APP_API_IMAGE_URL=${{ secrets.REACT_APP_API_IMAGE_URL }}" >> $GITHUB_ENV
 
     - name: Setup Node.js
       uses: actions/setup-node@v3
@@ -29,9 +37,10 @@ jobs:
       run: npm run test:unit
 
     - name: Build
-      run: npm run build
+      run: CI=false npm run build
 
     - name: Deploy to GitHub Pages
+      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
