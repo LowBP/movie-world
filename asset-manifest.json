@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/movie-world/static/js/main.131b2b95.js",
+    "main.js": "/movie-world/static/js/main.9ce3d6f9.js",
     "static/js/398.9eee3ae1.chunk.js": "/movie-world/static/js/398.9eee3ae1.chunk.js",
     "static/css/873.67f410ca.chunk.css": "/movie-world/static/css/873.67f410ca.chunk.css",
     "static/js/873.2bdeec31.chunk.js": "/movie-world/static/js/873.2bdeec31.chunk.js",
@@ -28,7 +28,7 @@
     "images/default-backdrop.jpg": "/movie-world/images/c69c4613a37c7e8b83dc2ab99f157001-default-backdrop.jpg",
     "index.html": "/movie-world/index.html",
     "images/not-found.svg": "/movie-world/images/f9db13c5f6963815666d104105243935-not-found.svg",
-    "main.131b2b95.js.map": "/movie-world/static/js/main.131b2b95.js.map",
+    "main.9ce3d6f9.js.map": "/movie-world/static/js/main.9ce3d6f9.js.map",
     "398.9eee3ae1.chunk.js.map": "/movie-world/static/js/398.9eee3ae1.chunk.js.map",
     "873.67f410ca.chunk.css.map": "/movie-world/static/css/873.67f410ca.chunk.css.map",
     "873.2bdeec31.chunk.js.map": "/movie-world/static/js/873.2bdeec31.chunk.js.map",
@@ -55,6 +55,6 @@
     "986.2cdaef29.chunk.js.map": "/movie-world/static/js/986.2cdaef29.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.131b2b95.js"
+    "static/js/main.9ce3d6f9.js"
   ]
 }
