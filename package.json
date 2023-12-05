@@ -1,7 +1,8 @@
 {
   "name": "movie-world",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://movie-world-eight.vercel.app/",
   "dependencies": {
     "@bem-react/classname": "^1.6.0",
     "@bem-react/classnames": "^1.3.10",
@@ -125,5 +126,18 @@
       "^@/(.*)$": "<rootDir>/src/$1",
       "^~/(.*)$": "<rootDir>/src/$1"
     }
-  }
+  },
+  "keywords": [
+    "React",
+    "Redux",
+    "React-Redux",
+    "Redux-Toolkit",
+    "Redux-saga",
+    "Webpack",
+    "Vercel",
+    "husky",
+    "commitlint"
+  ],
+  "author": "Pranav Venkitesan",
+  "license": "MIT"
 }
