@@ -52,7 +52,7 @@ export function register(config?: Config) {
         });
       } else {
         // Is not localhost. Just register service worker
-        registerValidSW('./service-worker.js', config);
+        registerValidSW('/service-worker.js', config);
       }
     });
   }
@@ -62,6 +62,7 @@ function registerValidSW(swUrl: string, config?: Config) {
   navigator.serviceWorker
     .register(swUrl)
     .then((registration) => {
+      console.info(registration);
       registration.onupdatefound = () => {
         const installingWorker = registration.installing;
         if (installingWorker == null) {
